@@ -1,7 +1,8 @@
 import { Route, Switch, Link } from 'react-router-dom';
 import Index from '../pages/Index.js';
 import Show from '../pages/Show.js';
-import Nav from '../components/Nav.js';
+import Intro from '../pages/Intro.js';
+// import Nav from '../components/Nav.js';
 
 function Main(props) {
     return (
@@ -9,9 +10,7 @@ function Main(props) {
             <main>
                 <Switch>
                     <Route exact path='/'>
-                        <Link to='/blog'>
-                            <button>ENTER</button>
-                        </Link>
+                        <Intro />
                     </Route>
                     <Route exact path='/blog'>
                         {/* <Nav /> */}

@@ -1,0 +1,45 @@
+$maincolor: rgb(146, 239, 255);
+$contrastcolor: black; // 변수 선언 방법
+
+@mixin black-text-reactblue-bg {
+    color: $contrastcolor;
+    background-color: $maincolor;
+}
+
+@mixin reactblue-text-black-bg {
+    color: $maincolor;
+    background-color: $contrastcolor;
+}
+
+.App {
+    text-align: center;
+}
+
+// header
+.header {
+
+    a {
+        text-decoration: none;
+    }
+
+    h1 {
+        @include black-text-reactblue-bg;
+        margin: 0;
+        padding: 1.5% 0 1.5% 0;
+    }
+}
+
+.nav {
+    @include black-text-reactblue-bg;
+    padding: 2% 0 2% 0;
+
+    a {
+        color: black;
+        text-decoration: none;
+        padding: 0 2% 0 2%;
+    }
+}
+
+Link {
+    text-decoration: none;
+}

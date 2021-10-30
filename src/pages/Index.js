@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 function Index(props) {
     return (
         <div className="index">
-            <h1>Home</h1>
+            <h1>Index</h1>
             <input type="text" placeholder="Title" />
             <input type="text" placeholder="Contents" />
             <input type="text" placeholder="Image URL" />
