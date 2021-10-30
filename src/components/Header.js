@@ -1,5 +1,13 @@
+import { Link } from 'react-router-dom';
+
 function Header (props) {
-    return <h1>Header</h1>;
+    return (
+        <div className="header">
+            <Link to='/'>
+                <h1>GA Journey</h1>
+            </Link>
+        </div>
+    );
 }
 
 export default Header;
