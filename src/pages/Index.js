@@ -1,18 +1,22 @@
 import {Link} from 'react-router-dom';
 
 function Index(props) {
-    return (
-        <div className="index">
-            <h1>Index</h1>
-            <input type="text" placeholder="Title" />
-            <input type="text" placeholder="Contents" />
-            <input type="text" placeholder="Image URL" />
-            <input type="submit" value="CREATE" /><br />
-            <Link to='/blog/:id'>
-            <button>SHOW PAGE</button>
-            </Link>
-        </div>
-    );
+    // loaded function
+    const loaded = () => {
+        return props.blogs.map((blog) => (
+            <div key={blog._id} className="blog">
+                <Link to={`/blog/${blog._id}`}>
+                    <h1>{ blog.title }</h1>
+                </Link>
+            </div>
+        ));
+    };
+
+    const loading = () => {
+        return <h1>Reading data...</h1>
+    };
+
+    return props.blogs ? loaded() : loading();;
 }
 
 export default Index;
