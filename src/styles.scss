@@ -13,6 +13,7 @@ $contrastcolor: black; // 변수 선언 방법
 
 .App {
     text-align: center;
+    font-family: Helvetica, sans-serif, Arial;
 }
 
 // header
@@ -42,4 +43,12 @@ $contrastcolor: black; // 변수 선언 방법
 
 Link {
     text-decoration: none;
+}
+
+main {
+    margin-top: 6%;
+}
+
+form {
+    padding-bottom: 4%;
 }
