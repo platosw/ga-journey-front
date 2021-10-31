@@ -11,9 +11,10 @@ function Index(props) {
 
     // handleChange function for form
     const handleChange = (e) => {
+        console.log(e.target.title);
         setNewForm((prevState) => ({
             ...prevState,
-            [e.target.title]: e.target.value,
+            [e.target.name]: e.target.value,
         }));
     };
 
@@ -64,7 +65,7 @@ function Index(props) {
                     type="text"
                     value={newForm.img}
                     name="img"
-                    placeHolder="Image URL"
+                    placeholder="Image URL"
                     onChange={handleChange}
                 />
                 <input type="submit" value="Create Contents" />
