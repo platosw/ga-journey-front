@@ -29,6 +29,28 @@ function Main(props) {
         getBlogs();
     };
 
+    const updateBlog = async (blog, id) => {
+        // make put request to create blog
+        await fetch(URL + id, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'Application/json',
+            },
+            body: JSON.stringify(blog),
+        });
+        // update list of blogs
+        getBlogs();
+    };
+
+    const deleteBlog = async (id) => {
+        // make delete request to create people
+        await fetch(URL + id, {
+            method: 'DELETE',
+        });
+        // update list of blogs
+        getBlogs();
+    };
+
     useEffect(() => getBlogs(), []);
 
     return (
@@ -42,7 +64,14 @@ function Main(props) {
                     <Index blogs={blogs} createBlog={createBlog}>
                     </Index>
                 </Route>
-                <Route path='/blog/:id' render={(rp) => <Show {...rp} />}>
+                <Route path='/blog/:id' render={(rp) => (
+                    <Show
+                        blogs={blogs}
+                        updateBlog={updateBlog}
+                        deleteBlog={deleteBlog}
+                        {...rp} 
+                    />
+                )}>
                 </Route>
             </Switch>
         </main>
