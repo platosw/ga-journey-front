@@ -19,7 +19,7 @@ The material in General Assembly, convenient and easy to clean up if we have the
 
 ## Getting Started
 
-The Project's <a href='https://trello.com/b/h8F6OHES/the-blog-for-ga-journey' target='_blanks'>planning</a><br />
+The Project's <a href='https://trello.com/b/h8F6OHES/the-blog-for-ga-journey' target='_blank'>planning</a><br />
 This is deployed app on <a href=''>Netlify</a>
 
 ## Future Enhancements
