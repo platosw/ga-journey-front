@@ -33,7 +33,7 @@ function Show (props) {
     return (
         <div className="blog">
             <h1>{blog.title}</h1>
-            <button id='delete' onClick={removeBlog}>  {/* 왜 id='delete' 라고 쓰는지 물어보기 */}
+            <button id='delete' onClick={removeBlog}>
                 DELETE
             </button>
             <p>{blog.text}</p>

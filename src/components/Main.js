@@ -23,7 +23,7 @@ function Main(props) {
             headers: {
                 'Content-Type': 'Application/json',
             },
-            body: JSON.stringify(blog),
+            body: JSON.stringify(blog), // 이 코드가 무엇인지 찾아볼 것
         });
         // update list of blogs
         getBlogs();
