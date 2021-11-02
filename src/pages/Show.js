@@ -25,7 +25,37 @@ function Show (props) {
         props.history.push('/blog');
     };
 
-    return <h1>Show</h1>;
+    return (
+        <div className="blog">
+            <h1>{blog.title}</h1>
+            <p>{blog.text}</p>
+            <img src={blog.img} alt={blog.title} />
+            <form onSubmit={handleSubmit}>
+                <input 
+                    type="text"
+                    value={editForm.title}
+                    name="title"
+                    placeholder="Title"
+                    onChange={handleChange}
+                />
+                <input 
+                    type="text"
+                    value={editForm.text}
+                    name="text"
+                    placeholder="Contents"
+                    onChange={handleChange}
+                />
+                <input 
+                    type="text"
+                    value={editForm.img}
+                    name="img"
+                    placeholder="Image URL"
+                    onChange={handleChange}
+                />
+                <input type="submit" value="Update Blog" />
+            </form>
+        </div>
+    );
 }
 
 export default Show;

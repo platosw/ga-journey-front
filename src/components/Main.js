@@ -31,7 +31,7 @@ function Main(props) {
 
     const updateBlog = async (blog, id) => {
         // make put request to create blog
-        await fetch(URL + id, {
+        await fetch(`${URL}/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'Application/json',
@@ -44,7 +44,7 @@ function Main(props) {
 
     const deleteBlog = async (id) => {
         // make delete request to create people
-        await fetch(URL + id, {
+        await fetch(`${URL}/${id}`, {
             method: 'DELETE',
         });
         // update list of blogs

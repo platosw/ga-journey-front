@@ -11,6 +11,10 @@ $contrastcolor: black; // 변수 선언 방법
     background-color: $contrastcolor;
 }
 
+body {
+    margin: 0;
+}
+
 .App {
     text-align: center;
     font-family: Helvetica, sans-serif, Arial;
