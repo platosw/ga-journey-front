@@ -18,7 +18,7 @@ Mongoose/MongoDB
 
 ## Getting Started
 
-The Project's planning: [https://trello.com/b/h8F6OHES/the-blog-for-ga-journey]
+The Project's <a href='https://trello.com/b/h8F6OHES/the-blog-for-ga-journey' target='_blanks'>planning</a><br />
 This is deployed app on <a href=''>Netlify</a>
 
 ## Future Enhancements
