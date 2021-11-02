@@ -22,7 +22,7 @@ function Show (props) {
         e.preventDefault();
         props.updateBlog(editForm, blog._id);
         // redirect blogs back to index
-        props.history.push('/blog');
+        props.history.push(`/blog/${blog._id}`);
     };
 
     const removeBlog = () => {

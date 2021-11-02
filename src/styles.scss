@@ -56,3 +56,30 @@ main {
 form {
     padding-bottom: 4%;
 }
+
+button {
+    @include black-text-reactblue-bg;
+    display: block;
+    margin: auto;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+#enter {
+    text-decoration: none;
+    color: black;
+}
+
+#title {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+a:hover {
+    color: rgb(255, 224, 229);
+}
+
+#title:hover {
+    color: red;
+}

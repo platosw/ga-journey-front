@@ -4,12 +4,12 @@ function Nav(props) {
     return (
         <nav className="nav">
             <Link to='/blog'>HOME</Link>
-            <Link>HTML</Link>
-            <Link>CSS</Link>
-            <Link>JavaScript</Link>
-            <Link>Node.js</Link>
-            <Link>React</Link>
-            <Link>Python</Link>
+            <Link to='/blog/block'>HTML</Link>
+            <Link to='/blog/block'>CSS</Link>
+            <Link to='/blog/block'>JavaScript</Link>
+            <Link to='/blog/block'>Node.js</Link>
+            <Link to='/blog/block'>React</Link>
+            <Link to='/blog/block'>Python</Link>
         </nav>
     );
 }

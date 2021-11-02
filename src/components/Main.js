@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import Index from '../pages/Index.js';
 import Show from '../pages/Show.js';
 import Intro from '../pages/Intro.js';
+import Block from '../pages/Block.js';
 // import Nav from '../components/Nav.js';
 
 function Main(props) {
@@ -63,6 +64,9 @@ function Main(props) {
                     {/* <Nav /> */}
                     <Index blogs={blogs} createBlog={createBlog}>
                     </Index>
+                </Route>
+                <Route exact path='/blog/block'>
+                    <Block />
                 </Route>
                 <Route path='/blog/:id' render={(rp) => (
                     <Show

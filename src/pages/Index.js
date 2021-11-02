@@ -32,8 +32,8 @@ function Index(props) {
     const loaded = () => {
         return props.blogs.map((blog) => (
             <div key={blog._id} className="blog">
-                <Link to={`/blog/${blog._id}`}>
-                    <h1>{blog.title}</h1>
+                <Link to={`/blog/${blog._id}`} id='title'>
+                    <strong>{blog.title}</strong><br /><br />
                 </Link>
             </div>
         ));
@@ -46,21 +46,21 @@ function Index(props) {
     return (
         <section>
             <form onSubmit={handleSubmit}>
-                <input 
+                <input
                     type="text"
                     value={newForm.title}
                     name="title"
                     placeholder="Title"
                     onChange={handleChange}
                 />
-                <input 
-                    type="text" 
+                <input
+                    type="text"
                     value={newForm.text}
                     name="text"
                     placeholder="Contents"
                     onChange={handleChange}
                 />
-                <input 
+                <input
                     type="text"
                     value={newForm.img}
                     name="img"
