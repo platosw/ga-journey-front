@@ -11,7 +11,6 @@ function Index(props) {
 
     // handleChange function for form
     const handleChange = (e) => {
-        console.log(e.target.title);
         setNewForm((prevState) => ({
             ...prevState,
             [e.target.name]: e.target.value,

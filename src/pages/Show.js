@@ -25,6 +25,11 @@ function Show (props) {
         props.history.push('/blog');
     };
 
+    const removeBlog = () => {
+        props.deleteBlog(blog._id);
+        props.history.push('/blog');
+    };
+
     return (
         <div className="blog">
             <h1>{blog.title}</h1>
@@ -54,6 +59,9 @@ function Show (props) {
                 />
                 <input type="submit" value="Update Blog" />
             </form>
+            <button id='delete' onClick={removeBlog}>  {/* 왜 id='delete' 라고 쓰는지 물어보기 */}
+                DELETE
+            </button>
         </div>
     );
 }
