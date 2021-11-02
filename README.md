@@ -13,8 +13,8 @@ Mongoose/MongoDB
 ## Screenshots
 
 <img src='./images/1.png' alt='screenshotintro' style='width: 3500px;' />
-<img src='./images/2.png' alt='screenshothome' style='width: 350px;' />
-<img src='./images/3.png' alt='screenshotshow' style='width: 350px;' />
+<img src='./images/2.png' alt='screenshothome' style='width: 3500px;' />
+<img src='./images/3.png' alt='screenshotshow' style='width: 3500px;' />
 
 ## Getting Started
 
