@@ -3,12 +3,13 @@
 The material in General Assembly, convenient and easy to clean up if we have the note the idea of creating this app.
 
 ## Technologies Used
-
-React
-SASS
-Node.js
-Express
-Mongoose/MongoDB
+<ul>
+<li>React</li>
+<li>SASS</li>
+<li>Node.js</li>
+<li>Express</li>
+<li>MongoDB/Mongoose</li>
+</ul>
 
 ## Screenshots
 
@@ -23,3 +24,10 @@ This is deployed app on <a href=''>Netlify</a>
 
 ## Future Enhancements
 
+<ul>
+    <li>Athentication</li>
+    <li>Authorization</li>
+    <li>Categorized Ability</li>
+    <li>Styling with Bootstrap</li>
+    <li>Advanced Text Type Input Form</li>
+</ul>
