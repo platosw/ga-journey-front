@@ -10,6 +10,7 @@ function Main(props) {
     const [blogs, setBlogs] = useState(null);
 
     const URL = 'https://ga-journey.herokuapp.com/blog';
+    // const URL = 'http://localhost:3001/blog';
 
     const getBlogs = async () => {
         const response = await fetch(URL);
