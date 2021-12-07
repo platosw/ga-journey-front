@@ -1,6 +1,6 @@
 # GA Journey
 
-The material in General Assembly, convenient and easy to clean up if we have the note the idea of creating this app.
+I recorded notes about the material covered and my experience with General Assembly Bootcamp.
 
 ## Technologies Used
 <ul>
