@@ -48,18 +48,19 @@ function Show (props) {
                 />
                 <input 
                     type="text"
-                    value={editForm.text}
-                    name="text"
-                    placeholder="Contents"
-                    onChange={handleChange}
-                />
-                <input 
-                    type="text"
                     value={editForm.img}
                     name="img"
                     placeholder="Image URL"
                     onChange={handleChange}
                 />
+                <br />
+                <textarea
+                    value={editForm.text}
+                    name="text"
+                    placeholder="Contents"
+                    onChange={handleChange}
+                />
+                <br />
                 <input type="submit" value="Update Blog" />
             </form>
         </div>

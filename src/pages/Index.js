@@ -55,18 +55,19 @@ function Index(props) {
                 />
                 <input
                     type="text"
-                    value={newForm.text}
-                    name="text"
-                    placeholder="Contents"
-                    onChange={handleChange}
-                />
-                <input
-                    type="text"
                     value={newForm.img}
                     name="img"
                     placeholder="Image URL"
                     onChange={handleChange}
                 />
+                <br />
+                <textarea
+                    value={newForm.text}
+                    name="text"
+                    placeholder="Contents"
+                    onChange={handleChange}
+                />
+                <br />
                 <input type="submit" value="Create Contents" />
             </form>
             {props.blogs ? loaded() : loading()}
