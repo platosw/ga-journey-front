@@ -33,7 +33,7 @@ function Index(props) {
         return props.blogs.map((blog) => (
             <div key={blog._id} className="blog">
                 <Link to={`/blog/${blog._id}`} id='title'>
-                    <strong>{blog.title}</strong><br /><br />
+                    <strong>{blog.title}</strong>&nbsp;&nbsp;&nbsp;<p id="date">{blog.updatedAt}</p><br /><br />
                 </Link>
             </div>
         ));
